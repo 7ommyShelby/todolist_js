@@ -108,6 +108,7 @@ main {
     border: 1px solid blueviolet;
     padding: 5px 10px;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .tempedit {
