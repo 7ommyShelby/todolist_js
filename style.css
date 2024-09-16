@@ -13,6 +13,10 @@
     padding: 0;
     box-sizing: border-box;
     color: darkgrey;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    /* font-weight: <weight>; */
+    font-style: normal;
 }
 
 
@@ -97,7 +101,8 @@ main {
     width: 2rem;
     text-align: center;
     display: flex;
-    align-items: center;justify-content: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .edit,
