@@ -1,0 +1,117 @@
+:root {
+    --z-index: -2;
+    --height: 100vh;
+    --width: 100%;
+    --background-color: #000000;
+    --gradient-color1: #ffffff33;
+    --gradient-color2: #00091d;
+    --gradient-size: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: darkgrey;
+}
+
+
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    background-color: #00091D;
+    padding: 10px 20px;
+    border-bottom: 0.5px solid white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: var(--background-color);
+    background-image: radial-gradient(var(--gradient-color1) 1px,
+            var(--gradient-color2) 1px);
+    background-size: var(--gradient-size) var(--gradient-size);
+    height: var(--height);
+    width: var(--width);
+    padding: 10px 0px;
+}
+
+.inputs {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    /* margin-top: 3rem; */
+}
+
+.inputs form {
+    display: flex;
+    gap: 2rem;
+    width: 50%;
+}
+
+.inputs>form>label {
+    font-size: 2rem;
+    width: 100%;
+}
+
+.inputs>form>input {
+    padding: 10px 10px;
+    background-color: rgb(3, 18, 74);
+    border: none;
+    width: 100%;
+    border-radius: 50px;
+}
+
+.display {
+    display: flex;
+    padding: 10px 20px;
+    flex-direction: column;
+    gap: 5px;
+    height: 80%;
+    overflow-y: scroll;
+    align-items: center;
+    /* margin-top: 2rem; */
+}
+
+.display::-webkit-scrollbar {
+    display: none;
+}
+
+.taskcontainer {
+    width: 50%;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5px 20px;
+}
+
+.taskcontainer h3 {
+    border: 1px solid white;
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+    text-align: center;
+    display: flex;
+    align-items: center;justify-content: center;
+}
+
+.edit,
+.del,
+.save {
+    background-color: #00091d;
+    width: 70px;
+    border: 1px solid blueviolet;
+    padding: 5px 10px;
+    font-weight: 600;
+}
+
+.tempedit {
+    background-color: #00091d;
+    border: 1px solid blueviolet;
+    padding: 5px 10px;
+}
